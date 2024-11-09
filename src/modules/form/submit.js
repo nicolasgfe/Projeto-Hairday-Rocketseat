@@ -29,9 +29,9 @@ form.onsubmit = (e) => {
 
 		const when = dayjs(selectedDate.value).add(hour, "hour")
 
-		const id = new Date.getTime()
+		const id = new Date().getTime()
 
-		console.log({id, name, hourSelected});
+		console.log({id, name, when});
 		
 	} catch (error) {
 		alert("Não foi possivel realizar o agendamento")
